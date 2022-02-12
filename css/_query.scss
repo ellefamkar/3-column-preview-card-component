@@ -1,0 +1,109 @@
+@media (min-width: 768px) and (max-width: 991px) {
+   .main__container {
+      // width: 7600px;
+      min-width: 726px;
+      max-width: 820px;
+      margin: 1rem auto;
+
+      .button {
+         font-size: 15px;
+         width: 146px;
+         height: 48px;
+         margin-top: 90px;
+         border: 1px solid transparent;
+         border-radius: 25px;
+         background-color: $primary-color;
+         cursor: pointer;
+
+         &:hover {
+            border: 1px solid $white;
+            background-color: transparent;
+            color: $white;
+         }
+
+         &.active {
+            border: 1px solid $white;
+            background-color: transparent;
+            color: $white;
+         }
+      }
+
+      &--first-column,
+      &--second-column,
+      &--third-column {
+         width: 241px;
+         height: auto;
+      }
+   }
+}
+@media (min-width: 340px) and (max-width: 767.9px) {
+   body {
+      height: auto;
+      margin: 2rem auto;
+   }
+   .main__container {
+      max-width: 320px;
+      margin: 1rem auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      &--first-column {
+         border-top-left-radius: $border-radius;
+         border-top-right-radius: $border-radius;
+         border-bottom-left-radius: 0px;
+      }
+      &--third-column {
+         border-top-right-radius: 0px;
+         border-bottom-left-radius: $border-radius;
+         border-bottom-right-radius: $border-radius;
+      }
+   }
+   .attribution {
+      margin: 1rem auto;
+   }
+}
+@media (max-width: 339px) {
+   body {
+      height: auto;
+      margin: 2rem auto;
+   }
+   .attribution {
+      max-width: 95%;
+      margin: 1rem auto;
+   }
+   .main__container {
+      max-width: 95%;
+      margin: 1rem auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      &--first-column {
+         width: 95%;
+         height: auto;
+         padding: 48px 30px;
+         border-top-left-radius: $border-radius;
+         border-top-right-radius: $border-radius;
+         border-bottom-left-radius: 0px;
+      }
+      &--second-column {
+         width: 95%;
+         padding: 48px 30px;
+         height: auto;
+      }
+      &--third-column {
+         width: 95%;
+         padding: 48px 30px;
+         height: auto;
+         border-top-right-radius: 0px;
+         border-bottom-left-radius: $border-radius;
+         border-bottom-right-radius: $border-radius;
+      }
+      button {
+         width: auto;
+         padding: 0.3rem 2rem;
+      }
+   }
+}

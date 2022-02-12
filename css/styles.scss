@@ -1,0 +1,121 @@
+@import "variables";
+
+@font-face {
+   font-family: "BigShouldersDisplay";
+   src: url("../fonts/BigShouldersDisplay-Regular.ttf") format("truetype");
+}
+@font-face {
+   font-family: "LexendDeca";
+   src: url("../fonts/LexendDeca-Regular.ttf") format("truetype");
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   height: 100vh;
+   width: 100vw;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: $primary-color;
+}
+
+.main__container {
+   width: 920px;
+   max-width: 920px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   h1 {
+      font-size: 40px;
+      margin: 40px 0px;
+      font-weight: bold;
+      color: $primary-color;
+      font-family: "BigShouldersDisplay";
+   }
+
+   p {
+      color: $primary-color;
+      font-size: 15px;
+      font-family: "LexendDeca";
+      line-height: 1.3rem;
+   }
+
+   button {
+      font-size: 15px;
+      width: 146px;
+      height: 48px;
+      margin-top: 90px;
+      border: 1px solid transparent;
+      border-radius: 25px;
+      background-color: $primary-color;
+      cursor: pointer;
+
+      &:hover {
+         border: 1px solid $white;
+         background-color: transparent;
+         color: $white;
+      }
+
+      &.active {
+         border: 1px solid $white;
+         background-color: transparent;
+         color: $white;
+      }
+   }
+
+   &--first-column {
+      padding: 48px;
+      width: 307px;
+      background-color: $color-first-column;
+      height: 500px;
+      border-top-left-radius: $border-radius;
+      border-bottom-left-radius: $border-radius;
+
+      button {
+         color: $color-first-column;
+      }
+   }
+
+   &--second-column {
+      height: 500px;
+      width: 307px;
+      padding: 48px;
+      background-color: $color-second-column;
+
+      button {
+         color: $color-second-column;
+      }
+   }
+
+   &--third-column {
+      height: 500px;
+      width: 307px;
+      padding: 48px;
+      background-color: $color-third-column;
+      border-top-right-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
+
+      button {
+         color: $color-third-column;
+      }
+   }
+}
+
+.attribution {
+   font-size: 11px;
+   text-align: center;
+   font-family: "LexendDeca";
+   margin-top: 1rem;
+   a {
+      color: hsl(228, 45%, 44%);
+   }
+}
+
+@import "query";

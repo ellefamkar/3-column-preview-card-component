@@ -1,0 +1,258 @@
+@font-face {
+  font-family: "BigShouldersDisplay";
+  src: url("../fonts/BigShouldersDisplay-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "LexendDeca";
+  src: url("../fonts/LexendDeca-Regular.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F2F2F2;
+}
+
+.main__container {
+  width: 920px;
+  max-width: 920px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__container h1 {
+  font-size: 40px;
+  margin: 40px 0px;
+  font-weight: bold;
+  color: #F2F2F2;
+  font-family: "BigShouldersDisplay";
+}
+
+.main__container p {
+  color: #F2F2F2;
+  font-size: 15px;
+  font-family: "LexendDeca";
+  line-height: 1.3rem;
+}
+
+.main__container button {
+  font-size: 15px;
+  width: 146px;
+  height: 48px;
+  margin-top: 90px;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  background-color: #F2F2F2;
+  cursor: pointer;
+}
+
+.main__container button:hover {
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.main__container button.active {
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.main__container--first-column {
+  padding: 48px;
+  width: 307px;
+  background-color: #E28625;
+  height: 500px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.main__container--first-column button {
+  color: #E28625;
+}
+
+.main__container--second-column {
+  height: 500px;
+  width: 307px;
+  padding: 48px;
+  background-color: #006971;
+}
+
+.main__container--second-column button {
+  color: #006971;
+}
+
+.main__container--third-column {
+  height: 500px;
+  width: 307px;
+  padding: 48px;
+  background-color: #004140;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.main__container--third-column button {
+  color: #004140;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  font-family: "LexendDeca";
+  margin-top: 1rem;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main__container {
+    min-width: 726px;
+    max-width: 820px;
+    margin: 1rem auto;
+  }
+  .main__container .button {
+    font-size: 15px;
+    width: 146px;
+    height: 48px;
+    margin-top: 90px;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    background-color: #F2F2F2;
+    cursor: pointer;
+  }
+  .main__container .button:hover {
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+  }
+  .main__container .button.active {
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+  }
+  .main__container--first-column, .main__container--second-column, .main__container--third-column {
+    width: 241px;
+    height: auto;
+  }
+}
+
+@media (min-width: 340px) and (max-width: 767.9px) {
+  body {
+    height: auto;
+    margin: 2rem auto;
+  }
+  .main__container {
+    max-width: 320px;
+    margin: 1rem auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main__container--first-column {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0px;
+  }
+  .main__container--third-column {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  .attribution {
+    margin: 1rem auto;
+  }
+}
+
+@media (max-width: 339px) {
+  body {
+    height: auto;
+    margin: 2rem auto;
+  }
+  .attribution {
+    max-width: 95%;
+    margin: 1rem auto;
+  }
+  .main__container {
+    max-width: 95%;
+    margin: 1rem auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main__container--first-column {
+    width: 95%;
+    height: auto;
+    padding: 48px 30px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0px;
+  }
+  .main__container--second-column {
+    width: 95%;
+    padding: 48px 30px;
+    height: auto;
+  }
+  .main__container--third-column {
+    width: 95%;
+    padding: 48px 30px;
+    height: auto;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  .main__container button {
+    width: auto;
+    padding: 0.3rem 2rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

@@ -12,8 +12,6 @@ To do this challenge, you need a basic understanding of:
 
 - HTML
 - CSS
-- JavaScript
-
 ## What i have used to build this project
 
 You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go. However  i wrote this design with simple html5 and sass and made it responsive for all the devices, since my users should be able to: View the optimal layout and hover or active states depending on their device's screen size
@@ -23,5 +21,7 @@ You can use any tools you like to help you complete the challenge. So if you've 
 We know what we need first, yes! you are right, the design file. So let's checkout [Fimga](https://www.figma.com/file/bniymsHXiBth9dQbpyBRuQ/3-column-preview-card-component?node-id=0%3A1) to find even the smallest details about the style requirements of this project such as `font-size`, `padding` and `margin` as well as finding all the required assets in the `/images` folder. The assets are already optimized. `color palette` is also available in figma file to guide you to choose the accurate colors.
 
 Feel free to ask any questions come to your mind on my github account!
+
+If you want to see the final result check this out [3-column-preview-card](https://ellefamkar.github.io/3-column-preview-card-component/)
 
 **Have fun using it!** 🚀

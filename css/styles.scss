@@ -5,6 +5,10 @@
    src: url("../fonts/BigShouldersDisplay-Regular.ttf") format("truetype");
 }
 @font-face {
+   font-family: "BigShouldersDisplay";
+   src: url("../fonts/BigShouldersDisplay-Light.ttf") format("truetype");
+}
+@font-face {
    font-family: "LexendDeca";
    src: url("../fonts/LexendDeca-Regular.ttf") format("truetype");
 }
@@ -16,13 +20,29 @@
 }
 
 body {
-   height: 100vh;
+   min-height: 100vh;
    width: 100vw;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    background-color: $primary-color;
+}
+
+
+.bg-icon_sedans {
+   width: 64px; height: 40px;
+   background: url('../images/css_sprites.png') -10px -70px;
+}
+
+.bg-icon_luxury {
+   width: 64px; height: 40px;
+   background: url('../images/css_sprites.png') -94px -10px;
+}
+
+.bg-icon_suvs {
+   width: 64px; height: 40px;
+   background: url('../images/css_sprites.png') -10px -10px;
 }
 
 .main__container {
@@ -34,7 +54,7 @@ body {
 
    h1 {
       font-size: 40px;
-      margin: 40px 0px;
+      margin: 35px 0px 25px 0;
       font-weight: bold;
       color: $primary-color;
       font-family: "BigShouldersDisplay";
@@ -44,33 +64,41 @@ body {
       color: $primary-color;
       font-size: 15px;
       font-family: "LexendDeca";
-      line-height: 1.3rem;
+      line-height: 25px;
+      font-weight: 400;
    }
 
    button {
       font-size: 15px;
+      font-weight: 400;
+      line-height: 25px;
       width: 146px;
       height: 48px;
-      margin-top: 90px;
-      border: 1px solid transparent;
+      font-family: "LexendDeca";
+      border: 2px solid transparent;
       border-radius: 25px;
       background-color: $primary-color;
       cursor: pointer;
+      transition: all 0.35s ease-in-out;
 
       &:hover {
-         border: 1px solid $white;
+         border: 2px solid $white;
          background-color: transparent;
          color: $white;
       }
 
       &.active {
-         border: 1px solid $white;
+         border: 2px solid $white;
          background-color: transparent;
          color: $white;
       }
    }
 
    &--first-column {
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      justify-content: space-between;
       padding: 48px;
       width: 307px;
       background-color: $color-first-column;
@@ -84,6 +112,10 @@ body {
    }
 
    &--second-column {
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      justify-content: space-between;
       height: 500px;
       width: 307px;
       padding: 48px;
@@ -95,6 +127,10 @@ body {
    }
 
    &--third-column {
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      justify-content: space-between;
       height: 500px;
       width: 307px;
       padding: 48px;
